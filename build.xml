@@ -17,7 +17,7 @@
     </target>
 
     <target name="package" depends="compile">
-        <jar destfile="${build}/${ant.project.name}.jar" basedir="${classes}">
+        <jar destfile="${build}/${ant.project.name}.jar" basedir="${classes}" excludes="Test*.class">
             <manifest>
                 <attribute name="Main–Class" value="${ant.project.name}"/>
             </manifest>
