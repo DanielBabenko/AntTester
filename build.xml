@@ -24,4 +24,12 @@
         </jar>
     </target>
 
+    <target name="test" depends="compile">
+        <junit>
+            <classpath>
+                <pathelement location="${classes}"/>
+            </classpath>
+            <test name="TestHello"/>
+        </junit>
+    </target>
 </project>

@@ -1,5 +1,15 @@
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class HelloWorld {
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        HelloWorld hello = new HelloWorld();
+        System.out.println(hello.sayHello());
+    }
+
+    String sayHello() {
+        return "Hello, World!";
     }
 }
